@@ -45,7 +45,7 @@ data6=readmatrix('NanoPlot-data_barcode12.txt'); %load data.
 lengths6=data6(:,2); %read lengths.
 N50_6=log(1350);
 
-%Supblot 1.
+%Subplot 1.
 fig=figure('Position', get(0, 'Screensize')); %make figure full-screen.
 ax(1)=subplot(2,3,1);
 h1=histogram(log(lengths1),70); %log-transform the data.
@@ -57,7 +57,7 @@ h1.FaceColor=[.5 .8 .7]; %change bar fill colour.
 h1.EdgeColor=[.5 .8 .7]; %change bar outline colour.
 line([N50_1, N50_1],[0 250000], 'LineWidth', 2, 'Color', 'b');
 
-%Supblot 2.
+%Subplot 2.
 ax(2)=subplot(2,3,2);
 h2=histogram(log(lengths2),70); %log-transform the data.
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -68,7 +68,7 @@ h2.FaceColor=[.3 .6 .5]; %change bar fill colour.
 h2.EdgeColor=[.3 .6 .5]; %change bar outline colour.
 line([N50_2, N50_2], [0 250000], 'LineWidth', 2, 'Color', 'b');
 
-%Supblot 3.
+%Subplot 3.
 ax(3)=subplot(2,3,3);
 h3=histogram(log(lengths3),70); %log-transform the data.
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -79,7 +79,7 @@ h3.FaceColor=[.1 .4 .3]; %change bar fill colour.
 h3.EdgeColor=[.1 .4 .3]; %change bar outline colour.
 line([N50_3, N50_3],[0 250000], 'LineWidth', 2, 'Color', 'b');
 
-%Supblot 4.
+%Subplot 4.
 ax(4)=subplot(2,3,4);
 h4=histogram(log(lengths4),70); %log-transform the data.
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -90,7 +90,7 @@ h4.FaceColor=[.8 .5 .7]; %change bar fill colour.
 h4.EdgeColor=[.8 .5 .7]; %change bar outline colour.
 line([N50_4, N50_4], [0 250000], 'LineWidth', 2, 'Color', 'b');
 
-%Supblot 5.
+%Subplot 5.
 ax(5)=subplot(2,3,5);
 h5=histogram(log(lengths5),70); %log-transform the data.
 ylabel('Number of reads','FontSize',12); %add y-axis label.
@@ -101,7 +101,7 @@ h5.FaceColor=[.6 .3 .5]; %change bar fill colour.
 h5.EdgeColor=[.6 .3 .5]; %change bar outline colour.
 line([N50_5, N50_5], [0 250000], 'LineWidth', 2, 'Color', 'b');
 
-%Supblot 6.
+%Subplot 6.
 ax(6)=subplot(2,3,6);
 h6=histogram(log(lengths6),70); %log-transform the data.
 ylabel('Number of reads','FontSize',12); %add y-axis label.
